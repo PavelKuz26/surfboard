@@ -1,0 +1,13 @@
+.btn{
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+    border-radius: 100px;
+    padding: 21px 41px;
+    display: inline-block;
+    &--theme--yellow{
+        color: #000;
+        background: $yellow;
+    }
+}
