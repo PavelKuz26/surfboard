@@ -6,8 +6,24 @@
     border-radius: 100px;
     padding: 21px 41px;
     display: inline-block;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
     &--theme--yellow{
         color: #000;
         background: $yellow;
+        &:hover{
+            background: $darkYellow;
+        }
+    }
+    &--theme--transparent{
+        background: transparent;
+        color: $white;
+        font-size: $baseFontSize;
+        text-transform: capitalize;
+        font-weight: 400;
+        &:hover{
+            color: $yellow;
+        }
     }
 }

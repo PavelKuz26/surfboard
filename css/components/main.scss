@@ -3,16 +3,19 @@ $containerWidth: 940px;
 
 //colors
 $yellow:#FEDB3F;
+$darkYellow: #FFD517;
 $black: #292929;
-$gray: #666;
 $white: #fff;
+
+//z-index
+$z-fixed-menu: 100;
 
 
 //normalize
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
 
 //fonts
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700&display=swap');
 
 //setup
 @import "layout";
@@ -23,3 +26,14 @@ $white: #fff;
 @import "features";
 @import "feature";
 @import "btn";
+@import "section";
+@import "headline";
+@import "benefits";
+@import "benefit";
+@import "reviews";
+@import "interactive-avatar";
+@import "reviews-switcher";
+@import "order";
+@import "form";
+@import "radio";
+@import "fixed-menu";

@@ -1,0 +1,31 @@
+.benefit{
+    text-align: center;
+}
+.benefit__image--wrapper{
+    display: inline-block;
+    width: 128px;
+    height: 128px;
+    position: relative;
+    background: #F2F5F4;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    .benefit__icon{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 68px;
+        height: 68px;
+    }
+}
+.benefit__title{
+    font-size: 28px;
+    font-weight: 700;
+    color: $black;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.benefit__desc{
+    line-height: 1.2;
+}

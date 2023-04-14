@@ -1,0 +1,53 @@
+.form{
+    display: flex;
+}
+.form__col{
+    flex: 1;
+    margin-right: 28px;
+    &:last-child{
+        margin-right: 0;
+    }
+}
+.form__row{
+    display: flex;
+    margin-bottom: 12px;
+    &--textarea{
+        margin-bottom: 38px;
+    }
+}
+.form__block{
+    flex: 1;
+    margin-right: 16px;
+    &:last-child{
+        margin-right: 0;
+    }
+}
+.form__input{
+    width: 100%;
+    padding: 16px 12px;
+    border: 5px solid transparent;
+    border-radius: 4px;
+    &--textarea{
+        height: 154px;
+        resize: none;
+    }
+    &:focus{
+        outline: none;
+        border-color: $yellow;
+    }
+    
+}
+.form__controls{
+    display: flex;
+    flex-wrap: wrap;
+    &--radio{
+        margin-bottom: 20px;
+    }
+    &--checkbox{
+        margin-bottom: 48px;
+    }
+}
+.form__title{
+    color: $white;
+    text-transform: capitalize;
+}
