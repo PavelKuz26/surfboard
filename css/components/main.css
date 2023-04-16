@@ -79,9 +79,9 @@ footer {
 .hero {
   height: 100vh;
   min-height: 650px;
-  background-image: url("../../img/bg.png");
+  background-image: url("../../img/hero-bg.png");
   background-position: center;
-  background-size: 100% 850px;
+  background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
 }
