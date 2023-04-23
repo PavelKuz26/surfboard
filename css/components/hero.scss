@@ -1,40 +1,53 @@
 .hero{
     height: 100vh;
     min-height: rem(650px);
-    // width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-image: url('../../img/hero-bg.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     color: $white;
-}
-.hero__container{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    padding-top: rem(26px);
+    // padding-top: rem(26px);
     padding-bottom: rem(46px);
 }
+.hero__title__container,
+.hero__icons-section__container{
+    width: $containerWidth;
+    margin: 0 auto;
+}
+// .hero__container{
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+//     height: 100%;
+//     padding-top: rem(26px);
+//     padding-bottom: rem(46px);
+// }
 .hero__title-section{
-    width: 50%;
+    // width: 50%;
 
     @include tablets {
         width: 100%;
         flex: 1;
         display: flex;
-        flex-direction: column;
+        // flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
     }
 
     .hero__main-title{
+        width: 50%;
         font-size: rem(48px);
         font-weight: 700;
         text-transform: uppercase;
         margin-bottom: rem(17px);
         line-height: 1.1;
+        @include tablets{
+            width: 100%;
+        }
     }
     .hero__title-desc{
         font-size: rem(21px);

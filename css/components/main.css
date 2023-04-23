@@ -20,6 +20,11 @@ html {
     font-size: 16px;
   }
 }
+@media screen and (max-width: 404px) {
+  html {
+    font-size: 11px;
+  }
+}
 
 html,
 body {
@@ -108,14 +113,6 @@ footer {
 .hero {
   height: 100vh;
   min-height: 36.1111111111rem;
-  background-image: url("../../img/hero-bg.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-}
-
-.hero__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -126,14 +123,20 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 100%;
-  padding-top: 1.4444444444rem;
+  background-image: url("../../img/hero-bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
   padding-bottom: 2.5555555556rem;
 }
 
-.hero__title-section {
-  width: 50%;
+.hero__title__container,
+.hero__icons-section__container {
+  width: 940px;
+  margin: 0 auto;
 }
+
 @media screen and (max-width: 768px) {
   .hero__title-section {
     width: 100%;
@@ -143,10 +146,6 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -157,11 +156,17 @@ footer {
   }
 }
 .hero__title-section .hero__main-title {
+  width: 50%;
   font-size: 2.6666666667rem;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 0.9444444444rem;
   line-height: 1.1;
+}
+@media screen and (max-width: 768px) {
+  .hero__title-section .hero__main-title {
+    width: 100%;
+  }
 }
 .hero__title-section .hero__title-desc {
   font-size: 1.1666666667rem;
@@ -191,6 +196,21 @@ footer {
     background: #1968B1;
     padding: 0.5rem;
   }
+}
+
+.header__container {
+  width: 940px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 0.5555555556rem;
 }
 
 .logo {
@@ -411,6 +431,10 @@ footer {
   }
 }
 
+.benefits__section {
+  min-height: 54.4444444444rem;
+}
+
 .benefits {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -515,6 +539,10 @@ footer {
 
 .benefit__desc {
   line-height: 1.2;
+}
+
+.reviews__section {
+  min-height: 54.2222222222rem;
 }
 
 .reviews__display {
@@ -627,6 +655,7 @@ footer {
 }
 
 .order__section {
+  min-height: 54.4444444444rem;
   height: 100vh;
   width: 100%;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../../img/form-bg.png");
