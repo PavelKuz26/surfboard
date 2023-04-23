@@ -1,8 +1,8 @@
 .interactive-avatar{
     position: relative;
-    width: 76px;
-    height: 76px;
-    border: 6px solid transparent;
+    width: rem(76px);
+    height: rem(76px);
+    border: rem(6px) solid transparent;
     border-radius: 50%;
     overflow: hidden;
     &--active{

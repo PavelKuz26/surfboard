@@ -6,10 +6,17 @@ $yellow:#FEDB3F;
 $darkYellow: #FFD517;
 $black: #292929;
 $white: #fff;
+$blue: #1968B1;
 
 //z-index
 $z-fixed-menu: 100;
 
+//remFunction
+@import "media";
+
+//breakpoints
+$tablets: 768px;
+$phones: 480px;
 
 //normalize
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
@@ -36,4 +43,7 @@ $z-fixed-menu: 100;
 @import "order";
 @import "form";
 @import "radio";
+@import "map";
+@import "footer";
 @import "fixed-menu";
+@import "hamburger";

@@ -3,10 +3,15 @@
     align-items: center;
 }
 .feature__icon{
-    margin-right: 14px;
+    margin-right: rem(14px);
+    .feature__img{
+        width: rem(35px);
+        height: rem(32px);
+        fill: $white;
+    }
 }
 .feature__text{
-    font-size: 16px;
+    font-size: rem(16px);
     font-weight: 700;
-    width: 90px;
+    width: rem(90px);
 }
