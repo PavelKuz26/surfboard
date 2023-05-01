@@ -349,11 +349,7 @@ footer {
 
 .products__section {
   background: #F8FAF9;
-}
-@media screen and (max-width: 768px) {
-  .products__section {
-    min-height: 55.5555555556rem;
-  }
+  min-height: 35.5555555556rem;
 }
 
 .slider_container {
@@ -373,6 +369,7 @@ footer {
   position: absolute;
   top: 50%;
   margin: 0 auto;
+  z-index: 100;
 }
 
 .slider__btn--left {
@@ -440,6 +437,11 @@ footer {
   width: 150px;
   height: 530px;
   rotate: 30deg;
+}
+@media screen and (max-width: 768px) {
+  .slider__pic {
+    margin-right: 0;
+  }
 }
 
 .slider__content {
@@ -1287,6 +1289,9 @@ footer {
   fill: #fff;
 }
 
+.menu--vertical {
+  display: block;
+}
 .menu--vertical .menu__list {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;

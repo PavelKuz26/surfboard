@@ -1,8 +1,6 @@
 .products__section{
     background: #F8FAF9;
-    @include tablets{
-        min-height: rem(1000px);
-    }
+    min-height: rem(640px);
 }
 .slider_container{
     overflow: hidden;
@@ -15,6 +13,7 @@
     position: absolute;
     top: 50%;
     margin: 0 auto;
+    z-index: 100;
 }
 .slider__btn--left{
     left: 0;
@@ -55,6 +54,9 @@
         width: 150px;
         height: 530px;
         rotate: (30deg);
+    }
+    @include tablets {
+        margin-right: 0;
     }
 }
 .slider__content{
