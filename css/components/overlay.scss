@@ -1,0 +1,34 @@
+.fullscreen-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #313131;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+}
+.fullscreen-menu__close-icon{
+    position: absolute;
+    top: rem(20px);
+    right: rem(20px);
+    width: rem(20px);
+    height: rem(20px);
+    fill: $white;
+}
+.menu--vertical{
+    display: block;
+    .menu__list{
+        flex-direction: column;
+        text-align: center;
+        .menu__item{
+            margin-right: 0;
+            .menu__link{
+                font-size: rem(36px);
+                font-weight: 400;
+            }
+        }
+    }
+}

@@ -7,6 +7,7 @@ $darkYellow: #FFD517;
 $black: #292929;
 $white: #fff;
 $blue: #1968B1;
+$gray: #666;
 
 //z-index
 $z-fixed-menu: 100;
@@ -33,6 +34,7 @@ $smallSize: 404px;
 @import "header";
 @import "features";
 @import "feature";
+@import "products";
 @import "btn";
 @import "section";
 @import "headline";
@@ -48,3 +50,4 @@ $smallSize: 404px;
 @import "footer";
 @import "fixed-menu";
 @import "hamburger";
+@import "overlay";
