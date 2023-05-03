@@ -5,6 +5,12 @@
 .slider_container{
     overflow: hidden;
 }
+.slider{
+    width: 100%;
+    display: flex;
+    transition: .5s;
+    left: 0;
+}
 .slider__area{
     display: flex;
     justify-content: center;
@@ -33,31 +39,32 @@
     display: flex;
     align-items: center;
     flex-shrink: 0;
+    padding: 0 rem(69px);
 
     @include tablets{
         flex-direction: column;
     }
 }
 .slider__pic{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 50%;
-    object-fit: contain;
-    align-self: center;
-    background-image: url('../../img/product-bg.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
     margin-right: rem(80px);
-    img{
-        width: 150px;
-        height: 530px;
-        rotate: (30deg);
-    }
     @include tablets {
         margin-right: 0;
     }
+}
+.slider__pic-wrap{
+    position: relative;
+}
+.slider__img::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    background-image: url('../../img/product-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
 }
 .slider__content{
     width: 50%;
@@ -93,7 +100,8 @@
     // height: rem(273px);
     top: 0;
     left: rem(89px);
-    opacity: 0;
+    // opacity: 0;
+    visibility: hidden;
     box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
     transition: opacity .4s;
 }
@@ -102,6 +110,7 @@
 }
 .dropdown:hover .dropdown__open{
     opacity: .8;
+    visibility: visible;
 }
 .arrows-dropdown{
     width: rem(38px);
@@ -140,7 +149,6 @@
     margin-bottom: rem(24px);
 }
 .slider__text{
-    width: 78%;
     margin-bottom: rem(24px);
     p{
         color: $gray;

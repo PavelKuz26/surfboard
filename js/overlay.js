@@ -1,13 +1,11 @@
 const openBtn = document.querySelector('#openBtn');
-const body = document.body;
+const closeBtn = document.querySelector('#closeBtn');
+const overlayElement = document.querySelector('.fullscreen-menu');
 
-openBtn.addEventListener('click', e =>{
-    const fullScreenMenu = document.createElement('div');
-    fullScreenMenu.classList.add('fullscreen-menu');
+openBtn.addEventListener('click', function(){
+    overlayElement.classList.add('fullscreen__active')
+});
 
-    const containerElement = document.createElement('nav');
-    containerElement.classList.add('menu');
-
-    fullScreenMenu.appendChild(containerElement);
-    body.appendChild(fullScreenMenu);
+closeBtn.addEventListener('click', function(){
+    overlayElement.classList.remove('fullscreen__active')
 });
