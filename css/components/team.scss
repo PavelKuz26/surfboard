@@ -1,0 +1,105 @@
+.team__list-desctop{
+    display: flex;
+    justify-content: space-between;
+    @include tablets{
+        display: none;
+    }
+}
+.team__list-mobile{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    height: 0;
+    .team__item{
+        margin-bottom: rem(16px);
+    }
+    @include tablets{
+        overflow: visible;
+    }
+}
+.team__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc( 100% / 4 - 14px );
+    @include tablets{
+        width: 100%;
+    }
+}
+.team__content-block{
+    text-align: center;
+    .proffession{
+        color: $black;
+    }
+    @include tablets{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .proffession__desc{
+        text-align: center;
+        margin: 0 auto;
+        color: $gray;
+        font-weight: 300;
+        width: 80%;
+    }
+}
+.team__member{
+    position: relative;
+    margin-bottom: rem(20px);
+}
+.team__title{
+    position: relative;
+    font-weight: 700;
+    font-size: rem(21px);
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    &::after{
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        right: rem(-20px);
+        border-right: rem(5px) solid transparent;
+        border-left: rem(5px) solid transparent;
+        border-bottom: rem(10px) solid $black;
+    }
+}
+.arrow__down{
+    &::after{
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        right: rem(-20px);
+        border-right: rem(5px) solid transparent;
+        border-left: rem(5px) solid transparent;
+        border-top: rem(10px) solid $black;
+    }
+}
+.team__content{
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 100%;
+    transition: height .3s;
+    @include tablets{
+        position: static;
+    }
+}
+.team__title{
+    margin-bottom: rem(8px);
+}
+.proffession{
+    margin-bottom: rem(4px);
+    @include tablets{
+        margin-bottom: rem(2px);
+    }
+}
