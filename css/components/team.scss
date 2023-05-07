@@ -60,28 +60,12 @@
     &::after{
         content: '';
         position: absolute;
-        width: 0;
-        height: 0;
+        background: url('../../img/Polygon-1.png') no-repeat center;
+        width: 10px;
+        height: 10px;
         top: 50%;
         transform: translateY(-50%);
         right: rem(-20px);
-        border-right: rem(5px) solid transparent;
-        border-left: rem(5px) solid transparent;
-        border-bottom: rem(10px) solid $black;
-    }
-}
-.arrow__down{
-    &::after{
-        content: '';
-        position: absolute;
-        width: 0;
-        height: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        right: rem(-20px);
-        border-right: rem(5px) solid transparent;
-        border-left: rem(5px) solid transparent;
-        border-top: rem(10px) solid $black;
     }
 }
 .team__content{

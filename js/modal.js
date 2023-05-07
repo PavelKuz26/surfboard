@@ -38,7 +38,7 @@ $('.form').submit(e => {
                 phone: phone.val(),
                 comment: comment.val(),
                 street: street.val(),
-                to: to.val()
+                // to: to.val()
             },
             succes: data =>{
                 content.text(data.message);

@@ -356,6 +356,16 @@ footer {
   overflow: hidden;
 }
 
+.slider__area {
+  position: relative;
+}
+.slider__area .bx-wrapper {
+  border: 0;
+  background: #F8FAF9;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .slider {
   width: 100%;
   display: -webkit-box;
@@ -378,6 +388,8 @@ footer {
 .slider__btn {
   position: absolute;
   top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   margin: 0 auto;
   z-index: 100;
 }
@@ -730,29 +742,13 @@ footer {
 .team__title::after {
   content: "";
   position: absolute;
-  width: 0;
-  height: 0;
+  background: url("../../img/Polygon-1.png") no-repeat center;
+  width: 10px;
+  height: 10px;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   right: -1.1111111111rem;
-  border-right: 0.2777777778rem solid transparent;
-  border-left: 0.2777777778rem solid transparent;
-  border-bottom: 0.5555555556rem solid #292929;
-}
-
-.arrow__down::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 0;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  right: -1.1111111111rem;
-  border-right: 0.2777777778rem solid transparent;
-  border-left: 0.2777777778rem solid transparent;
-  border-top: 0.5555555556rem solid #292929;
 }
 
 .team__content {
@@ -841,6 +837,10 @@ footer {
   color: #292929;
   margin-bottom: 1.4444444444rem;
   text-align: center;
+}
+
+.team__section {
+  height: 1000px;
 }
 
 .headline {

@@ -5,6 +5,14 @@
 .slider_container{
     overflow: hidden;
 }
+.slider__area{
+    position: relative;
+    .bx-wrapper{
+        border: 0;
+        background: #F8FAF9;
+        box-shadow: none;
+    }
+}
 .slider{
     width: 100%;
     display: flex;
@@ -18,6 +26,7 @@
 .slider__btn{
     position: absolute;
     top: 50%;
+    transform: translateY(-50%);
     margin: 0 auto;
     z-index: 100;
 }
