@@ -1,0 +1,69 @@
+.products-menu-section{
+    position: relative;
+    background: url('../../img/slider-accord.jpg') center center / cover no-repeat;
+    min-height: rem(652px);
+}
+.products-menu-section__title{
+    position: absolute;
+    top: rem(109px);
+    left: rem(84px);
+    color: #fff;
+}
+.products-menu{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+}
+.products-menu__item{
+    display: flex;
+}
+.products-menu__title{
+    position: relative;
+    width: rem(100px);
+}
+.products-menu__img{
+    height: 100%;
+    object-fit: cover;
+}
+.products-menu__text{
+    position: absolute;
+    color: $white;
+    font-size: rem(48px);
+    font-weight: 700;
+    transform: rotate(-90deg);
+    text-transform: capitalize;
+    height: 100px;
+    bottom: 19%;
+    // left: -50%;
+    left: calc(50% - 183px + 100px);
+}
+.products-menu__close{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: rem(20px);
+}
+.products-menu__content{
+    position: relative;
+    width: 0;
+    overflow: hidden;
+    transition: width .7s;
+    background: rgba(51, 53, 55, 0.9);
+}
+.products-menu__container{
+    position: relative;
+    padding: rem(31px) rem(38px);
+}
+.closestAccordeon{
+    filter: invert(1);
+    width: 16px;
+    height: 16px;
+}
+.products-menu__content-text p {
+    color: $white;
+    font-size: rem(16px);
+    line-height: rem(24px);
+}

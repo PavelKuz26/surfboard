@@ -43,7 +43,7 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -60,6 +60,11 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  will-change: transform;
 }
 
 .container {
@@ -349,7 +354,7 @@ footer {
 
 .products__section {
   background: #F8FAF9;
-  min-height: 35.5555555556rem;
+  min-height: 36.1111111111rem;
 }
 
 .slider_container {
@@ -778,6 +783,94 @@ footer {
   }
 }
 
+.products-menu-section {
+  position: relative;
+  background: url("../../img/slider-accord.jpg") center center/cover no-repeat;
+  min-height: 36.2222222222rem;
+}
+
+.products-menu-section__title {
+  position: absolute;
+  top: 6.0555555556rem;
+  left: 4.6666666667rem;
+  color: #fff;
+}
+
+.products-menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.products-menu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.products-menu__title {
+  position: relative;
+  width: 5.5555555556rem;
+}
+
+.products-menu__img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.products-menu__text {
+  position: absolute;
+  color: #fff;
+  font-size: 2.6666666667rem;
+  font-weight: 700;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  text-transform: capitalize;
+  height: 100px;
+  bottom: 19%;
+  left: calc(50% - 183px + 100px);
+}
+
+.products-menu__close {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 1.1111111111rem;
+}
+
+.products-menu__content {
+  position: relative;
+  width: 0;
+  overflow: hidden;
+  -webkit-transition: width 0.7s;
+  transition: width 0.7s;
+  background: rgba(51, 53, 55, 0.9);
+}
+
+.products-menu__container {
+  position: relative;
+  padding: 1.7222222222rem 2.1111111111rem;
+}
+
+.closestAccordeon {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  width: 16px;
+  height: 16px;
+}
+
+.products-menu__content-text p {
+  color: #fff;
+  font-size: 0.8888888889rem;
+  line-height: 1.3333333333rem;
+}
+
 .btn {
   font-size: 0.8888888889rem;
   font-weight: 700;
@@ -811,7 +904,6 @@ footer {
 
 .section {
   height: 100vh;
-  min-height: 36.1111111111rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -839,10 +931,6 @@ footer {
   text-align: center;
 }
 
-.team__section {
-  height: 1000px;
-}
-
 .headline {
   text-align: center;
 }
@@ -867,7 +955,7 @@ footer {
 }
 
 .benefits__section {
-  min-height: 54.4444444444rem;
+  min-height: 36.1111111111rem;
 }
 
 .benefits {
@@ -977,7 +1065,7 @@ footer {
 }
 
 .reviews__section {
-  min-height: 54.2222222222rem;
+  min-height: 36.1111111111rem;
 }
 
 .reviews__display {
@@ -1070,6 +1158,10 @@ footer {
   font-weight: 500;
 }
 
+.section__player {
+  background: #F8FAF9;
+}
+
 .interactive-avatar {
   position: relative;
   width: 4.2222222222rem;
@@ -1107,7 +1199,6 @@ footer {
 }
 
 .order__section {
-  min-height: 54.4444444444rem;
   height: 100vh;
   width: 100%;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../../img/form-bg.png");
@@ -1281,12 +1372,9 @@ footer {
   margin-right: 0.5555555556rem;
 }
 
-.map {
-  height: 36.2222222222rem;
-  background-image: url(../../img/map.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+#map {
+  width: 100%;
+  height: 33.3333333333rem;
 }
 
 .footer {
@@ -1375,6 +1463,7 @@ footer {
   top: 35%;
   right: 3%;
   z-index: 100;
+  color: #fff;
 }
 @media screen and (max-width: 768px) {
   .fixed-menu {
@@ -1385,8 +1474,10 @@ footer {
 .fixed-menu__item {
   margin-bottom: 0.2777777778rem;
 }
-.fixed-menu__item--active .fixed-menu__link {
-  border-color: #fff;
+
+.fixed-menu__item.active {
+  border: 0.0555555556rem solid #fff;
+  border-radius: 50%;
 }
 
 .fixed-menu__link {
@@ -1409,6 +1500,10 @@ footer {
   height: 0.3333333333rem;
   background: #fff;
   border-radius: 50%;
+}
+
+.fixed-menu.fixed-menu__black {
+  color: #292929;
 }
 
 .hamburger {

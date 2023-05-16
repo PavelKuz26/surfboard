@@ -3,6 +3,7 @@
     top: 35%;
     right: 3%;
     z-index: $z-fixed-menu;
+    color: $white;
 
     @include tablets {
         display: none;
@@ -10,11 +11,10 @@
 }
 .fixed-menu__item{
     margin-bottom: rem(5px);
-    &--active{
-        .fixed-menu__link{
-            border-color: $white;
-        }
-    }
+}
+.fixed-menu__item.active{
+    border: rem(1px) solid $white;
+    border-radius: 50%;
 }
 .fixed-menu__link{
     display: block;
@@ -35,4 +35,7 @@
         background: $white;
         border-radius: 50%;
     }
+}
+.fixed-menu.fixed-menu__black{
+    color: $black;
 }
