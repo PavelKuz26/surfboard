@@ -1,3 +1,31 @@
 .section__player{
     background: #F8FAF9;
 }
+.player__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.player{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.player__controls{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    background: #404040;
+    width: 100%;
+    bottom: 0;
+}
+.player__start{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    .play-btn{
+        width: rem(10px);
+        height: rem(15px);
+    }
+}
